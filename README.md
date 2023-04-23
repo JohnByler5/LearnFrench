@@ -2,7 +2,7 @@
 
 The learn French app is an app made in python that helps users learn French through connecting to OpenAI's ChatGPT, Google Translate, and wordreference.com and combining these tools in an easy-to-use interface for a smooth experience.
 
-# Instructions:
+# Instructions
 
 When you open up the app, the first thing you should do is to enter your French level. The app will use this inputted level and pass it to the AI in attempt to tune responses to your understanding and knowledge. After that, you can move on to any of the other functions.
 

@@ -1,26 +1,23 @@
-import tkinter as tk
-from tkinter import ttk
-from tkinter import scrolledtext
-from ttkthemes import ThemedTk
-
-import sv_ttk
-from replit import audio
-
-import os
-import json
 import copy
-
-from googletrans import Translator
-from wrpy import WordReference
-from gtts import gTTS
+import json
+import os
+import tkinter as tk
+from tkinter import scrolledtext
+from tkinter import ttk
 
 import openai
+import sv_ttk
+from googletrans import Translator
+from gtts import gTTS
+from replit import audio
+from ttkthemes import ThemedTk
+from wrpy import WordReference
 
 PROMPTS_PATH = 'prompts.json'
 with open(PROMPTS_PATH, 'r') as prompts:
 	PROMPTS = json.load(prompts)
 
-openai.api_key = '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'  # os.getenv('open_ai_api_key')
+openai.api_key =  os.getenv('open_ai_api_key')
 
 ENGLISH, FRENCH = 'en', 'fr'
 
